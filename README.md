@@ -14,12 +14,19 @@ Each topic folder typically contains:
 ## Progress
 
 01 - intro
+
 02 - Variables and Data Types  
+
 03 - Arithmetic operators
+
 04 - Accepting user input 
+
 05 - Type Conversion 
+
 06 - Constants
+
 07 - Math objects
+
 08 - if statements 
 
 
