@@ -1,0 +1,25 @@
+.labels{
+    font-size: 2.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mySubmitBtn{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#mySubmitBtn:hover{
+    background-color: aliceblue;
+}
+.results{
+    font-size: 3.4em;
+}
+#myResetBtn{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#myResetBtn:hover{
+    background-color: aliceblue;
+}
