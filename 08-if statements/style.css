@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+#submit{
+    font-size: 3em;
+    background-color: white;
+    transition: background-color 0.25s;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+#submit:hover{
+    background-color: hsl(214, 100%, 74%)
+}
+#submit:active{
+    background-color: hsl(214, 100%, 50%);
+}
+#result{
+    font-size: 3em;
+    font-family: Verdana;
+}
