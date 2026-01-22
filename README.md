@@ -31,6 +31,9 @@ Each topic folder typically contains:
 
 09 - checked property
 
+10 - ternary operator
+
+11 - switches
 
 (New topics are added as I continue learning.)
 
