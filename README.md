@@ -29,6 +29,8 @@ Each topic folder typically contains:
 
 08 - if statements 
 
+09 - checked property
+
 
 (New topics are added as I continue learning.)
 
