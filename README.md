@@ -35,6 +35,8 @@ Each topic folder typically contains:
 
 11 - switches
 
+12 - string methods
+
 (New topics are added as I continue learning.)
 
 ## Purpose of This Repository
