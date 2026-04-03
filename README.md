@@ -37,6 +37,14 @@ Each topic folder typically contains:
 
 12 - string methods
 
+13 - string slicing
+
+14 - method chaining
+
+15 - logical operator 
+
+16 - strict equality
+
 (New topics are added as I continue learning.)
 
 ## Purpose of This Repository
