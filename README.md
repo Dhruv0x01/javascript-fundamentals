@@ -6,8 +6,8 @@ Each folder focuses on **one concept**, with a simple HTML / CSS / JavaScript de
 
 ## Structure
 
-topics/       # concept-wise examples (numbered by video)
-projects/     # small projects built with those concepts
+- topics/       # concept-wise examples (numbered by video)
+- projects/     # small projects built with those concepts
 
 Each topic folder typically contains:
 - index.html – basic markup
