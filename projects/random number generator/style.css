@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana;
+    
+}
+div{
+    text-align: center;
+}
+#roll{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.25s;
+    cursor: pointer;
+}
+#roll:hover{
+    background-color: hsl(219, 100%, 75%);
+}
+#roll:active{
+    background-color: hsl(219, 100%, 30%);
+}
+
+#label1{
+    font-size: 3em;
+}
+#label2{
+    font-size: 3em;
+}
+#label3{
+    font-size: 3em;
+}

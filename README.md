@@ -6,6 +6,9 @@ Each folder focuses on **one concept**, with a simple HTML / CSS / JavaScript de
 
 ## Structure
 
+topics/       # concept-wise examples (numbered by video)
+projects/     # small projects built with those concepts
+
 Each topic folder typically contains:
 - index.html – basic markup
 - style.css – minimal styling (when needed)
@@ -13,51 +16,68 @@ Each topic folder typically contains:
 
 ## Progress
 
-01 - intro
+### Topics
 
-02 - Variables and Data Types  
+01 - Intro
 
-03 - Arithmetic operators
+02 - Variables and Data Types
 
-04 - Accepting user input 
+03 - Arithmetic Operators
 
-05 - Type Conversion 
+04 - Accepting User Input
+
+05 - Type Conversion
 
 06 - Constants
 
-07 - Math objects
+07 - Math Objects
 
-08 - if statements 
+08 - If Statements
 
-09 - checked property
+09 - Checked Property
 
-10 - ternary operator
+10 - Ternary Operator
 
-11 - switches
+11 - Switches
 
-12 - string methods
+12 - String Methods
 
-13 - string slicing
+13 - String Slicing
 
-14 - method chaining
+14 - Method Chaining
 
-15 - logical operator 
+15 - Logical Operators
 
-16 - strict equality
+16 - Strict Equality
+
+17 - While loop
+
+18 - for loop
 
 (New topics are added as I continue learning.)
 
+### Projects
+
+01 - Counter Program
+
+02 - Temperature Converter
+
+03 - Random Number Generator
+
+(New projects are added as I continue building.)
+
 ## Purpose of This Repository
 
-- Practice JavaScript concepts through small examples  
-- Build strong fundamentals before moving to projects  
-- Maintain a structured learning log on GitHub  
+- Practice JavaScript concepts through small examples
+- Build strong fundamentals before moving to projects
+- Maintain a structured learning log on GitHub
 
 ## Notes
 
-- These are **learning-focused examples**, not full projects  
-- Code may be improved or refactored as my understanding grows  
+- These are **learning-focused examples**, not full projects
+- Code may be improved or refactored as my understanding grows
 
 ---
 
- **Learning in public and improving consistently.**
+**Learning in public and improving consistently.**
+
