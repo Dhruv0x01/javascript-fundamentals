@@ -61,6 +61,8 @@ Each topic folder typically contains:
 21 - arrays
 
 22 - 2d arrays
+
+23 - spread operator
 (New topics are added as I continue learning.)
 
 ### Projects
