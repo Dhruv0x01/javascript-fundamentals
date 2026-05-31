@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(56, 63%, 81%);
+}
+
+h1{
+    color: hsl(104, 69%, 31%);
+}
+
+form{
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: auto; /* the form will stay in middle even if we resize window */
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px hsl(32, 68%, 39%, 35%); /* horizontal offset, vertical offset, blur, color */
+}
+
+#textBox{
+    width: 50%;
+    text-align: center; /* for the default value to be at centre */
+    color: hsl(0, 0%, 5%);
+    font-size: 2.4em;
+    border: 2px solid hsla(0, 0%, 11%, 0.8);
+    border-radius: 4px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+
+    background-color: hsl(271, 49%, 62%);
+    font-size: 1.5em; /* this increased button size too */
+    border: none;
+    padding: 10px 15px; /* (top/bottom and left/right) */ 
+    border-radius: 5px;
+    color: white;
+
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(271, 49%, 50%);
+}
+#result{
+    font-size: 1.8em;
+    font-weight: bold;
+}
