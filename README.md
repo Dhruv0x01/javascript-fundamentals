@@ -54,15 +54,18 @@ Each topic folder typically contains:
 
 18 - for loop
 
+19 - functions
+
+20 - variable scope
 (New topics are added as I continue learning.)
 
 ### Projects
 
 01 - Counter Program
 
-02 - Temperature Converter
+02 - Random Number Generator
 
-03 - Random Number Generator
+03 - Number Guessing game
 
 (New projects are added as I continue building.)
 
