@@ -63,6 +63,8 @@ Each topic folder typically contains:
 22 - 2d arrays
 
 23 - spread operator
+
+24 - rest parameters
 (New topics are added as I continue learning.)
 
 ### Projects
