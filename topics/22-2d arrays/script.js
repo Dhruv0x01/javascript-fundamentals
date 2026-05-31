@@ -1,0 +1,28 @@
+
+
+const matrix = [[1, 2, 3], 
+                [4, 5, 6],
+                [7, 8, 9],
+                ['*', 0, '#']];
+
+/*
+matrix[0][0] = 'X';
+matrix[0][1] = 'O';
+matrix[0][2] = 'X';
+
+matrix[1][0] = 'O';
+matrix[1][1] = 'O';
+matrix[1][2] = 'X';
+
+matrix[2][0] = 'O';
+matrix[2][1] = 'X';
+matrix[2][2] = 'O';
+*/
+
+
+for(let row of matrix){
+    const rowString = row.join('  '); // it will join each of them and separate them by '  ' 
+    console.log(rowString);
+}
+
+

@@ -57,6 +57,10 @@ Each topic folder typically contains:
 19 - functions
 
 20 - variable scope
+
+21 - arrays
+
+22 - 2d arrays
 (New topics are added as I continue learning.)
 
 ### Projects
