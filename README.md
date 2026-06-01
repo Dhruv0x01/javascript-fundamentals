@@ -77,6 +77,8 @@ Each topic folder typically contains:
 
 04 - Temperature Conversion program
 
+05 - Dice Roller Program
+
 (New projects are added as I continue building.)
 
 ## Purpose of This Repository

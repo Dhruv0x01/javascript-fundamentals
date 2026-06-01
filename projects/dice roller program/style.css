@@ -1,0 +1,37 @@
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#input{
+    font-size: 2rem;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+    border-color: rgb(73, 199, 216);
+    color:hsl(0, 0%, 0%)
+}
+#rollBtn{
+    background-color: hsl(204, 93%, 50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#rollBtn:hover{
+    background-color: hsl(204, 93%, 60%);
+}
+#rollBtn:active{
+    background-color: hsl(204, 93%, 70%);
+}
+#diceResult{
+    margin: 30px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
