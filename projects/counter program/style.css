@@ -1,0 +1,23 @@
+#count{
+    display:block;
+    font-size: 10em;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+#btncontainer{
+    text-align: center;
+}
+
+.button{
+    background-color: hsl(214, 100%, 74%);
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    color: white;
+}
+.button:hover{
+    background-color: hsl(219, 100%, 50%);
+}
