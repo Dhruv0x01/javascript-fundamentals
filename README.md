@@ -76,6 +76,7 @@ Each topic folder typically contains:
 | 03 | Number Guessing Game | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/number-guessing-game/) |
 | 04 | Temperature Conversion Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/temperature-conversion/) |
 | 05 | Dice Roller Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/dice-roller-program/) |
+| 06 | Random Password Generator | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/random-password-generator/) |
 
 (New projects are added as I continue building.)
 
