@@ -69,17 +69,17 @@ Each topic folder typically contains:
 
 ### Projects
 
-01 - Counter Program
-
-02 - Random Number Generator
-
-03 - Number Guessing game
-
-04 - Temperature Conversion program
-
-05 - Dice Roller Program
+| # | Project | Live Demo |
+|---|---------|-----------|
+| 01 | Counter Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/counter-program/) |
+| 02 | Random Number Generator | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/random-number-generator/) |
+| 03 | Number Guessing Game | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/number-guessing-game/) |
+| 04 | Temperature Conversion Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/temperature-conversion/) |
+| 05 | Dice Roller Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/dice-roller-program/) |
 
 (New projects are added as I continue building.)
+
+---
 
 ## Purpose of This Repository
 
