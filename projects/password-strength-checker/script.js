@@ -1,23 +1,3 @@
-/*
-Simple point system
-Length:-
-x >= 8 ----> 2 point
-5 <= x < 8 ----> 1 points
-Contain uppercase ----> 1 points
-Contain lowercase ----> 1 points
-Contain numbers ----> 1 points
-Contain special characters ----> 1 points
-
-6 points --> very strong
-5 points ---> strong
-4 points ---> medium
-3 points ---> weak
-0-2 points ----> very weak
-
-*/
-
-
-
 const input = document.getElementById("pass");
 const result = document.getElementById("strengthResult");
 const bar = document.getElementById("strengthBar");
@@ -96,6 +76,23 @@ function checkStrength(){
     result.textContent = `Strength: ${resultLabel}`;
 }
 
+
+/*
+Simple point system
+Length:-
+x >= 8 ----> 2 point
+5 <= x < 8 ----> 1 points
+Contain uppercase ----> 1 points
+Contain lowercase ----> 1 points
+Contain numbers ----> 1 points
+Contain special characters ----> 1 points
+
+6 points --> very strong
+5 points ---> strong
+4 points ---> medium
+3 points ---> weak
+0-2 points ----> very weak
+*/
 
 
 
