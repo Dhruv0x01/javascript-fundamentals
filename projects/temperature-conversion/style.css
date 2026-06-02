@@ -9,8 +9,10 @@ h1{
 
 form{
     background-color: hsl(0, 0%, 100%);
+
     text-align: center;
     margin: auto; /* the form will stay in middle even if we resize window */
+    
     max-width: 350px;
     padding: 25px;
     border-radius: 10px;
