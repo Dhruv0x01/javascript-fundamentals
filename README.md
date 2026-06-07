@@ -67,6 +67,8 @@ Each topic folder typically contains:
 24 - rest parameters
 
 25 - callbacks
+
+26 - forEach() method
 (New topics are added as I continue learning.)
 
 ### Projects
