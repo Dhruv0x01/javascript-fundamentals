@@ -65,6 +65,8 @@ Each topic folder typically contains:
 23 - spread operator
 
 24 - rest parameters
+
+25 - callbacks
 (New topics are added as I continue learning.)
 
 ### Projects
