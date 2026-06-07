@@ -20,7 +20,6 @@
 // Example 1:-
 
 
-
 hello(wait); // make sure you only write the name of function that you wanna pass that is 
             // dont write () after goodbye as that will call the goodbye function right away
             // By using callbacks, we are making sure that the function passed in is executed next 
@@ -29,8 +28,6 @@ function hello(callback){
     console.log(`Hello`);
     callback(); // invoked the received callback function
 }
-// But we need to make sure that the goodbye function is executed once hello function is done printing hello
-
 
 function wait(){
     console.log(`Wait`);
