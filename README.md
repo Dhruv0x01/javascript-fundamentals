@@ -73,6 +73,8 @@ Each topic folder typically contains:
 27 - map() method
 
 28 - filter() method
+
+29 - reduce() method
 (New topics are added as I continue learning.)
 
 ### Projects
