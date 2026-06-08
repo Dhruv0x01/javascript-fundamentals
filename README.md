@@ -71,6 +71,8 @@ Each topic folder typically contains:
 26 - forEach() method
 
 27 - map() method
+
+28 - filter() method
 (New topics are added as I continue learning.)
 
 ### Projects
