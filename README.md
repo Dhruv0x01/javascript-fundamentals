@@ -69,6 +69,8 @@ Each topic folder typically contains:
 25 - callbacks
 
 26 - forEach() method
+
+27 - map() method
 (New topics are added as I continue learning.)
 
 ### Projects
