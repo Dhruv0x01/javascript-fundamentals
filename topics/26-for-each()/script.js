@@ -49,7 +49,7 @@ fruits.forEach(display);
 
 
 function lowerCase(element, index, array){
-    array[index] = element.toLowerCase();
+    array[index] = element.toLowerCase(); // changing individual elements in the array, no need to return anything
 }
 
 function upperCase(element, index, array){
@@ -63,3 +63,35 @@ function capitalizeFirstElement(element, index, array){
 function display(element, index, array){
     console.log(`Element at index ${index} is ${element}`);
 }
+
+
+
+/* forEach() vs map()
+
+array.forEach(callback) 
+array.map(callback)
+
+-element, index and array will be provided for us with forEach() and map() both methods
+-Both accepts a callback function
+-Both iterate through an array
+-Both go through each element one by one
+-Both apply that callback to each element
+
+-forEach() returns undefined and does not modify the original array by default 
+-Modification happens only if you explicitly do it inside the callback
+
+-map() returns a new array, original stay unchanged
+
+-map() is chainable (eg. .map().filter())
+-forEach() is not chainable
+
+We use forEach() for side effects (logging, DOM updates), 
+We use it when we just want to do something with each item
+Side effect -> when a function does something outside of itself, like changing something in the world
+rather than just returning a value
+
+
+
+We use map() when you need a transformed array back
+ 
+*/
