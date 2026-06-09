@@ -75,6 +75,8 @@ Each topic folder typically contains:
 28 - filter() method
 
 29 - reduce() method
+
+30 - function expressions
 (New topics are added as I continue learning.)
 
 ### Projects
