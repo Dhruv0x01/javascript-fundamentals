@@ -12,6 +12,13 @@ const hello = function(){
 }
 hello(); // Prints Hello automatically
 
+/* Like we added function inside the .map(), this is called function expression, with arrow function the syntax get even shorter
+numbers.map(function(element){
+    return Math.pow(element, 2);
+}
+*/ 
+
+
 
 setTimeout(hello, 3000); // Added a callback, it will perform that callback after 3 sec
 
