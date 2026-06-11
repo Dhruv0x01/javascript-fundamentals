@@ -77,6 +77,8 @@ Each topic folder typically contains:
 29 - reduce() method
 
 30 - function expressions
+
+31 - Javascript objects
 (New topics are added as I continue learning.)
 
 ### Projects
