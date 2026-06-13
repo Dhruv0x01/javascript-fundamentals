@@ -92,6 +92,7 @@ Each topic folder typically contains:
 | 05 | Dice Roller Program | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/dice-roller-program/) |
 | 06 | Random Password Generator | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/random-password-generator/) |
 | 07 | Password Strength Checker | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/password-strength-checker/) |
+| 08 | Console Quiz | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/quiz-app/) |
 
 (New projects are added as I continue building.)
 
