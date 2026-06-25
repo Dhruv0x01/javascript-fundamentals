@@ -18,8 +18,8 @@ class Animal{
         this.name = name;
         this.age = age;
     }
-
     // name and age are settled in the contructor of parent class(current class) hence we used it as this.
+    
     // speed is settled for each child class in there, so we accept a speed -> and when we call this inside child class
     move(speed){
         console.log(`This ${this.name} at a ripe age of ${this.age} moves at a speed of ${speed} km/hr`);
