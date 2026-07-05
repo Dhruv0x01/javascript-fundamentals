@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library Book Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">My Library</h1>
+
+
+        <!-- Add Book Form-->
+        <form id="bookForm">
+            <input type="text" id="titleInput" placeholder="Title" required>
+            <input type="text" id="authorInput" placeholder="Author" required>
+            <input type="number" id="yearInput" placeholder="Year" required>
+
+            <select id="statusInput">
+                <option value="reading">Reading</option>
+                <option value="completed">Completed</option>
+                <option value="plan-to-read">Plan to Read</option>
+            </select>
+
+            <input type="file" id="coverInput" accept="image/*" hidden>
+            <label for="coverInput" class="file-label">Choose cover image</label>
+            <button type="submit">Add Book</button>
+        </form>
+
+<!--        we use this instead of id for each button, with this we only need one listener instead of four if we used ids
+            Since all 4 buttons carry their identity in data-filter, you can attach one click listener to the parent container and 
+            figure out which button was clicked by reading its dataset, rather than writing four "nearly-identical" listeners. That's event delegation. 
+            to select these we would write this in js-> event.target.dataset.filter 
+-->
+        <div class="controls">
+        <!-- Filter Controls-->
+        <div class="filter-controls">
+            
+            <button data-filter="all">All</button>
+            <button data-filter="reading">Reading</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="plan-to-read">Plan to Read</button>
+        </div>
+
+        <!-- Sort Controls -->
+        <div class="sort-controls">
+            <button id="sortByTitle">Sort by Title</button>
+            <button id="sortByYear">Sort by Year</button>
+        </div>
+        </div>
+
+        <!-- Summary -->
+        <p id="summary"></p>
+        
+        <!-- Book list(will fill it with Js)-->
+        <ul id="bookList"></ul>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
+
+<!-- we used data-filter as all of them would have same logic code like this if we used 4 seperate ids:-
+const filterAllBtn = document.getElementById('filterAll');
+const filterReadingBtn = document.getElementById('filterReading');
+const filterCompletedBtn = document.getElementById('filterCompleted');
+const filterPlanToReadBtn = document.getElementById('filterPlanToRead');
+
+filterAllBtn.addEventListener('click', () => {
+  currentFilter = 'all';
+  renderManga();
+});
+
+filterReadingBtn.addEventListener('click', () => {
+  currentFilter = 'reading';
+  renderManga();
+});
+
+filterCompletedBtn.addEventListener('click', () => {
+  currentFilter = 'completed';
+  renderManga();
+});
+
+filterPlanToReadBtn.addEventListener('click', () => {
+  currentFilter = 'plan-to-read';
+  renderManga();
+});
+
+
+
+And now with data-filter code will be like this:-
+
+const filterButtons = document.querySelectorAll('.filter-controls button');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    currentFilter = event.target.dataset.filter; // "all", "reading", "completed", "plan-to-read"
+    renderManga();
+  });
+});
+
+-->
+
+
+<!-- but in sort by title, year there will be diff logic for each set hence no point of data-sort 
+js code with data-sort 
+
+const sortButtons = document.querySelectorAll('.sort-controls button');
+
+sortButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const sortType = event.target.dataset.sort; // "title" or "year"
+
+    if (sortType === 'title') {
+      mangaList.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortType === 'year') {
+      mangaList.sort((a, b) => a.year - b.year);
+    }
+
+    renderManga();
+  });
+});
+
+
+
+and now code with diff ids
+const sortByTitleBtn = document.getElementById('sortByTitle');
+const sortByYearBtn = document.getElementById('sortByYear');
+
+sortByTitleBtn.addEventListener('click', () => {
+  mangaList.sort((a, b) => a.title.localeCompare(b.title));
+  renderManga();
+});
+
+sortByYearBtn.addEventListener('click', () => {
+  mangaList.sort((a, b) => a.year - b.year);
+  renderManga();
+});
+-->
