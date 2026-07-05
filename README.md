@@ -78,7 +78,31 @@ Each topic folder typically contains:
 
 30 - function expressions
 
-31 - Javascript objects
+31 - Javascript arrow functions
+
+32 - Javascript objects
+
+33 - this operator
+
+34 - constructor
+
+35 - classes
+
+36 - static keyword
+
+37 - inheritance
+
+38 - super
+
+39 - getters & setters
+
+40 - destructuring
+
+41 - nested objects
+
+42 - array of objects
+
+43 - sorting
 (New topics are added as I continue learning.)
 
 ### Projects
