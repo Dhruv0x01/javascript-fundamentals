@@ -143,4 +143,20 @@ body{
     font-size: 0.9em;
     margin: 10px 0;
 }
+.delete-btn {
+    display: block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F5E4E1;
+    color: #A83B2E;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #E8A79E;
+    color: #6E1F15;
+}
 

@@ -1,26 +1,140 @@
+const bookListEl = document.getElementById("bookList");
+
 class Book{
     constructor(title, author, year, status, coverImage){
+        this.id = nextId;
         this.title = title;
         this.author = author;
         this.year = year;
         this.status = status;
         this.coverImage = coverImage;
+        nextId++;
     }
 }
 
 let books = [];
+let nextId = 1;
+let currentFilter = 'all';
+
+const statusColors = {
+    'reading': '#BA7517',
+    'completed': '#3B6D11',
+    'plan-to-read': '#5F5E5A'
+}
+
 
 function addBook(title, author, year, status, coverImage){
     const obj = new Book(title, author, year, status, coverImage);
     books.push(obj);
 }
 
-addBook("AOT", "Isayama", 2012, "completed");
-addBook("Naruto", "idk", 2000, "plan-to-read");
-addBook("Bleach", "idek", 2003, "reading");
-
-function removeBook(){
-
+function removeBook(id){
+    books = books.filter((book) => book.id !== id); // Return only those whose id is not the same as id sent for removal
 }
+
+
+/* The card building stuff from html that we recreated in js in renderBooks()
+<li class="book-card">
+  <div class="book-cover" style="background-color: ...">OP</div>
+  <div class="book-info">
+    <p class="book-title">One Piece</p>
+    <p class="book-meta">Oda · 1997</p>
+    <span class="status-badge">Completed</span>
+  </div>
+</li>
+*/
+function renderBooks(){
+    bookListEl.innerHTML = ''; // So old stuff is not repeated
+
+    const booksToShow = currentFilter === 'all'? books: books.filter((book) => book.status === currentFilter);
+
+    booksToShow.forEach((book) => {
+        const li = document.createElement('li');
+        li.className = 'book-card';
+
+        const cover = document.createElement('div');
+        cover.className = 'book-cover';
+        cover.textContent = book.title[0];
+        cover.style.backgroundColor = statusColors[book.status];
+
+        const info = document.createElement('div');
+        info.className = 'book-info';
+
+        const title = document.createElement('p');
+        title.className = 'book-title';
+        title.textContent = book.title;
+
+        const meta = document.createElement('p');
+        meta.className = 'book-meta';
+        meta.textContent = `${book.author} · ${book.year}`;
+
+        const status = document.createElement('span');
+        status.className = 'status-badge';
+        status.textContent = book.status;
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'delete-btn';
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.addEventListener('click', () => {
+            removeBook(book.id);
+            renderBooks();
+        })
+        
+        li.appendChild(cover);
+        li.appendChild(info);
+        bookListEl.appendChild(li);
+
+        info.appendChild(title);
+        info.appendChild(meta);
+        info.appendChild(status);
+        info.appendChild(deleteBtn);
+    });
+}
+
+const bookForm = document.getElementById('bookForm');
+//a <form> submitting reloads/navigates the page by default;
+//event.preventDefault(), called inside your event handler, tells the browser: "don't do that automatic built-in thing this time — I'm handling it myself.
+
+// Through addEventListener(eventType, callbackFunction) you tell an element "run this function whenever a specific event happens to you"
+// eventType = 'click', 'submit', 'keydown', 'mouseover' etc
+
+bookForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Read values from each input here
+    const title = document.getElementById('titleInput').value;
+    const author = document.getElementById('authorInput').value;
+    const year = Number(document.getElementById('yearInput').value);
+    const status = document.getElementById('statusInput').value;
+
+    addBook(title, author, year, status);
+    renderBooks();
+    bookForm.reset();
+})
+
+const filterBtn = document.querySelectorAll('.filter-controls button');
+
+filterBtn.forEach((button) => {
+    button.addEventListener('click', () => {
+        currentFilter = button.dataset.filter;
+
+        filterBtn.forEach((btn) => btn.classList.remove('active')); // Think of it as: "whatever was previously marked active, un-mark it, unconditionally."
+        button.classList.add('active'); // add .active onto just the one that was clicked
+        // Your JS (classList.add('active')) and your CSS (.filter-controls button.active) are two completely separate files, 
+        // written at two completely separate times — but they're linked by this one shared string, "active"
+        renderBooks();
+    });
+});
+
+
+addBook("AOT", "Isayama", 2012, "reading");
+renderBooks();
+addBook("Naruto", "Kishimoto", 2002, "completed");
+renderBooks();
+addBook("Solo Leveling", "Gong", 2016, "plan-to-read");
+renderBooks();
+
+
+
 
 console.log(books);
