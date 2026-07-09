@@ -117,6 +117,7 @@ Each topic folder typically contains:
 | 06 | Random Password Generator | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/random-password-generator/) |
 | 07 | Password Strength Checker | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/password-strength-checker/) |
 | 08 | Console Quiz | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/quiz-app/) |
+| 09 | Library Book/Manga Tracker | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/library-book-tracker/) |
 
 (New projects are added as I continue building.)
 
