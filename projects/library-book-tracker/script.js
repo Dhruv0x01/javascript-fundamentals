@@ -15,6 +15,7 @@ class Book{
 let books = [];
 let nextId = 1;
 let currentFilter = 'all';
+let currentCoverImage;
 
 const statusColors = {
     'reading': '#BA7517',
@@ -32,6 +33,21 @@ function removeBook(id){
     books = books.filter((book) => book.id !== id); // Return only those whose id is not the same as id sent for removal
 }
 
+const coverInput = document.getElementById("coverInput");
+
+coverInput.addEventListener('change', () => { 
+    const file = coverInput.files[0];
+    if(!file) return; // user opened the picker but hit cancel 
+
+    const reader = new FileReader();
+    reader.onload = () => {
+        currentCoverImage = reader.result; // lands here whenever it's done 
+    };
+    reader.readAsDataURL(coverInput.files[0]);
+
+});
+
+
 
 /* The card building stuff from html that we recreated in js in renderBooks()
 <li class="book-card">
@@ -44,7 +60,7 @@ function removeBook(id){
 </li>
 */
 function renderBooks(){
-    bookListEl.innerHTML = ''; // So old stuff is not repeated
+    bookListEl.innerHTML = ''; // So old cards gone
 
     const booksToShow = currentFilter === 'all'? books: books.filter((book) => book.status === currentFilter);
 
@@ -54,9 +70,16 @@ function renderBooks(){
 
         const cover = document.createElement('div');
         cover.className = 'book-cover';
-        cover.textContent = book.title[0];
-        cover.style.backgroundColor = statusColors[book.status];
-
+        
+        if(book.coverImage){
+            const img = document.createElement('img');
+            img.src = book.coverImage;
+            cover.appendChild(img);
+        }else{
+            cover.textContent = book.title[0];
+            cover.style.backgroundColor = statusColors[book.status];
+        }
+        
         const info = document.createElement('div');
         info.className = 'book-info';
 
@@ -107,9 +130,10 @@ bookForm.addEventListener('submit', (event) => {
     const year = Number(document.getElementById('yearInput').value);
     const status = document.getElementById('statusInput').value;
 
-    addBook(title, author, year, status);
+    addBook(title, author, year, status, currentCoverImage);
     renderBooks();
     bookForm.reset();
+    currentCoverImage = undefined; // reset so next book doesn't inherit it
 })
 
 const filterBtn = document.querySelectorAll('.filter-controls button');
@@ -127,14 +151,16 @@ filterBtn.forEach((button) => {
 });
 
 
-addBook("AOT", "Isayama", 2012, "reading");
-renderBooks();
-addBook("Naruto", "Kishimoto", 2002, "completed");
-renderBooks();
-addBook("Solo Leveling", "Gong", 2016, "plan-to-read");
-renderBooks();
+const sortByTitleBtn = document.getElementById("sortByTitle");
+const sortByYearBtn = document.getElementById("sortByYear");
 
+sortByTitleBtn.addEventListener('click', () => {
+    books.sort((a, b) => a.title.localeCompare(b.title));
+    renderBooks();
+});
 
+sortByYearBtn.addEventListener('click', () => {
+    books.sort((a, b) => a.year - b.year);
+    renderBooks();
+});
 
-
-console.log(books);
