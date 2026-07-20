@@ -103,6 +103,18 @@ Each topic folder typically contains:
 42 - array of objects
 
 43 - sorting
+
+44 - shuffle array
+
+45 - date object
+
+46 - closures
+
+47 - setTimeout()
+
+48 - console.time()
+
+49 - format currency
 (New topics are added as I continue learning.)
 
 ### Projects
