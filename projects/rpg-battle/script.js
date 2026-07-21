@@ -105,50 +105,33 @@ let round = 1;
 while(igris.isAlive() && goblin.isAlive()){
     console.log(`\n--- Round ${round} ---`);
 
-    if(round % 2 === 1){
+    // Igris randomly berserks or attacks
+    if(Math.random() < 0.5){
         igris.berserk(goblin);
     }else{
         igris.attack(goblin);
     }
 
     if(!goblin.isAlive()){
-        console.log(`\n🏆 ${igris.name} wins the battle!`);
+        console.log(`\n🏆 ${igris.name} wins!`);
         break;
     }
 
-    goblin.fireball(igris);
+    // Goblin randomly fireballs or attacks
+    if(Math.random() < 0.5){
+        goblin.fireball(igris);
+    }else{
+        goblin.attack(igris);
+    }
 
     if(!igris.isAlive()){
-        console.log(`\n💀 ${goblin.name} wins the battle!`);
+        console.log(`\n💀 ${goblin.name} wins!`);
         break;
     }
 
     round++;
 }
 
-/*
-const hero = new Warrior("Igris");
-const enemy = new Mage("Goblin");
 
-while(hero.isAlive() && enemy.isAlive()){
 
-    // Hero attacks Enemy
-    hero.attack(enemy);
 
-    // Next check if enemy is alive or dead  -> if not alive then hero wins, if alive then attack back  
-    if(!enemy.isAlive()){
-        console.log(`${hero.name} wins!`);
-        break;
-    }else{
-        enemy.fireball(hero);
-    }
-
-    // If hero dies -> enemy wins else loop repeats that is hero attacks enemy
-    if(!hero.isAlive()){
-        console.log(`${enemy.name} wins!`);
-        break;
-    }
-
-}
-
-*/
