@@ -131,6 +131,8 @@ Each topic folder typically contains:
 | 08 | Console Quiz | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/quiz-app/) |
 | 09 | Library Book/Manga Tracker | [▶ View Live](https://Dhruv0x01.github.io/javascript-fundamentals/projects/library-book-tracker/) |
 | 10 | Digital Clock | [▶ View Live](https://dhruv0x01.github.io/javascript-fundamentals/projects/digital-clock/) |
+| 11 | Stop Watch | [▶ View Live](https://dhruv0x01.github.io/javascript-fundamentals/projects/stopwatch/) |
+
 
 (New projects are added as I continue building.)
 
