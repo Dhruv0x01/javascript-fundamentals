@@ -6,15 +6,11 @@ let elapsedTime = 0;
 let isRunning = false;
 
 function start(){
-
     if(!isRunning){
         startTime = Date.now() - elapsedTime;
         timer = setInterval(update, 10); // Calls update function every 10 ms
         isRunning = true;
     }
-
-    
-
 }
 
 function stop(){
@@ -51,6 +47,4 @@ function update(){
 
     display.textContent = `${hours}:${mins}:${secs}:${ms}`;
     
-
-
 }
